@@ -1,0 +1,33 @@
+nav{
+  background-color: black;
+  float: left;
+  font: bold 12px Arial, Helvetica, Sans-serif;
+  border: 1px solid #121314;
+  border-top: 1px solid #2b2e30;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 0px;
+  overflow: hidden;
+  width:100%;
+  min-width: 650px;
+  text-align: center
+}
+
+li{
+  align-items: center;
+  background-color: inherit; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+li:hover {
+  background-color: #4CAF50;
+}
+
+a {
+  text-decoration: none;
+}
