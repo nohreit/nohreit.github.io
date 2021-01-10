@@ -1,0 +1,152 @@
+#container{
+  overflow: auto;
+  position: absolute;
+  border: 2px dashed gray;
+  width: 95%;
+}
+
+.header-content {
+  overflow: auto;
+  position: relative;
+  border: 2px dashed purple;
+}
+
+.img-logo {
+  float: left;
+  width: 20%;
+}
+
+.img-iceland {
+  float: right;
+  width: 20%;
+  height: 128px;
+}
+
+h2.iceland-title {
+  text-align: center;
+}
+
+.iceland-content {
+  position: relative;
+  border: 2px dashed red;
+}
+
+.top-row-content {
+  overflow: auto;
+  border: 2px dashed gold;
+}
+
+figure.img-top-row-left {
+  position: relative;
+  overflow: auto;
+  float: left;
+  border: 2px dashed black;
+  padding-right: 10%;
+  display: inline;
+  width: -1000px
+}
+
+.img-top-row-left img{
+    width: 30%;
+}
+
+.top-row-right {
+  overflow: auto;
+  float: right;
+  border: 2px dashed blue;
+  text-align: justify;
+  width: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.trip-cost-block table {
+  border: 2px solid black;
+}
+.trip-cost-block table th {
+  background-color: palegreen;
+}
+
+.contact-us-block {
+  position: relative;
+  border: 2px dashed black;
+}
+
+.phone-block {
+  overflow: auto;
+  position: relative;
+  border: 2px dashed blue;
+}
+
+.email-block {
+  overflow: auto;
+  position: relative;
+  border: 2px dashed yellow;
+}
+
+.instagram-block {
+  overflow: auto;
+  position: relative;
+  border: 2px dashed purple;
+}
+
+.img-phone, .img-email, .img-instagram {
+  position: relative;
+  float: left;
+  width: 6%;
+  margin-left: 4%;
+}
+
+
+.link-phone, .link-email, .link-instagram {
+  text-align: left;
+  float: right;
+  padding-top: 2%;
+  padding-right: 74%;
+}
+
+ .link-instagram {
+   padding-right: 69%;
+ }
+
+ .foot-content {
+   position: relative;
+   border: 2px dashed pink;
+   text-align: center;
+ }
+
+ .foot-content ul {
+   list-style-type: none;
+ }
+
+ .foot-content ul li {
+   display: inline;
+   font-size: 140%;
+ }
+
+ .foot-content h4 {
+   font-size: 90%;
+ }
+
+ a {
+   text-decoration: none;
+ }
