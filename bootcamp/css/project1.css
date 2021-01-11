@@ -1,152 +1,177 @@
-#container{
-  overflow: auto;
+/* NOTE: PROJECT 1 */
+
+/* NOTE: div#content */
+div#content {
   position: absolute;
   border: 2px dashed gray;
-  width: 95%;
-}
-
-.header-content {
+  width: 99%;
   overflow: auto;
-  position: relative;
-  border: 2px dashed purple;
+  font-size: 120%;
 }
 
-.img-logo {
+div#content h1 {
+  font-size: 300%;
+}
+
+div#content h3 {
+  font-size: 200%;
+}
+
+
+
+/* NOTE: header */
+header {
+
+  border: 2px dashed black;
+  width: auto;
+  overflow: auto;
+}
+
+header > img.header-logo {
   float: left;
-  width: 20%;
+  width: 10%;
 }
 
-.img-iceland {
+header > img.header-iceland {
   float: right;
-  width: 20%;
-  height: 128px;
+  width: 10%;
 }
 
-h2.iceland-title {
+/* NOTE: iceland-main-content */
+
+div.iceland-main-content {
+  width: auto;
+  border: 2px dashed aquamarine;
+  overflow: auto;
+}
+
+/* NOTE: sub main-content section block */
+
+section.title-and-intro > h1 {
   text-align: center;
 }
 
-.iceland-content {
-  position: relative;
-  border: 2px dashed red;
-}
+/* NOTE: sub main-content things-to-do block */
 
-.top-row-content {
-  overflow: auto;
-  border: 2px dashed gold;
-}
-
-figure.img-top-row-left {
-  position: relative;
-  overflow: auto;
-  float: left;
-  border: 2px dashed black;
-  padding-right: 10%;
-  display: inline;
-  width: -1000px
-}
-
-.img-top-row-left img{
-    width: 30%;
-}
-
-.top-row-right {
-  overflow: auto;
-  float: right;
-  border: 2px dashed blue;
-  text-align: justify;
+div.things-to-do {
   width: auto;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.trip-cost-block table {
   border: 2px solid black;
-}
-.trip-cost-block table th {
-  background-color: palegreen;
-}
-
-.contact-us-block {
-  position: relative;
-  border: 2px dashed black;
-}
-
-.phone-block {
   overflow: auto;
-  position: relative;
-  border: 2px dashed blue;
 }
 
-.email-block {
+/* NOTE: .top-row and .bottom-row */
+div.top-row, div.bottom-row {
+  width: auto;
+  border: 2px dashed red;
   overflow: auto;
-  position: relative;
-  border: 2px dashed yellow;
 }
 
-.instagram-block {
-  overflow: auto;
-  position: relative;
-  border: 2px dashed purple;
-}
-
-.img-phone, .img-email, .img-instagram {
-  position: relative;
+/* NOTE: .top-row >  figure */
+figure.northern-light-img {
+  border: 2px dashed gold;
+  width: auto;
   float: left;
-  width: 6%;
+  overflow: auto;
+}
+
+/* NOTE: .top-row and .bottom-row > figure > img, div.*-description */
+figure.northern-light-img > img, figure.hiking-img > img{
+  width: 536px;
+  height: 358px;
+}
+
+div.top-row > div.northern-light-description, div.hiking-description {
+  border: 2px dashed black;
+  overflow: auto;
+  margin-right: 2%;
+  margin-left: 2%;
+  text-align: justify;
+}
+
+/* NOTE: .bottom-row > figure */
+figure.hiking-img {
+  border: 2px dashed gold;
+  width: auto;
+  float: right;
+  overflow: auto;
+}
+
+
+/* NOTE: previous project1 css content */
+
+/* NOTE: upcoming-events-block */
+div.upcoming-events{}
+
+/* NOTE: newsfeed-block */
+div.newsfeed > div > section{
   margin-left: 4%;
 }
 
-
-.link-phone, .link-email, .link-instagram {
-  text-align: left;
-  float: right;
-  padding-top: 2%;
-  padding-right: 74%;
+/* NOTE: trip-cost table block */
+div.trip-cost table {
+  border: 2px solid black;
+  width: 40%;
+  font-size: 120%;
 }
 
- .link-instagram {
-   padding-right: 69%;
- }
+div.trip-cost table th {
+  background-color: palegreen;
+}
 
- .foot-content {
-   position: relative;
-   border: 2px dashed pink;
-   text-align: center;
- }
+/* NOTE: contact-us block */
+div.contact-us {
+  border: 2px dashed black;
+}
 
- .foot-content ul {
-   list-style-type: none;
- }
+div.contact-us > div.contact-us-group-icons {
+  border: 2px dashed purple;
+}
 
- .foot-content ul li {
-   display: inline;
-   font-size: 140%;
- }
+figure.phone, figure.email, figure.instagram {
+  overflow: auto;
+  border: 2px dashed blue;
+}
 
- .foot-content h4 {
-   font-size: 90%;
- }
+figure > img.img-phone, img.img-email, img.img-instagram {
+  border: 2px dashed gold;
+  width: 5%;
+  float: left;
+  overflow: auto;
+  margin right: 100px;;
+}
 
- a {
-   text-decoration: none;
- }
+figure > figcaption.link-phone, figcaption.link-email, figcaption.link-instagram {
+  border: 2px dashed black;
+  overflow: auto;
+  margin-top: 2%;
+  margin-left: 3%;
+  float: left;
+  text-align: justify;
+}
+
+/* NOTE: footer block */
+footer {
+
+  border: 2px dashed pink;
+  text-align: center;
+}
+
+footer > ul {
+  list-style-type: none;
+}
+
+footer > ul > li {
+  display: inline;
+  font-size: 140%;
+}
+
+footer > h4 {
+  font-size: 90%;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+/* NOTE: end of code */

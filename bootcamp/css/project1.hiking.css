@@ -1,0 +1,62 @@
+/* NOTE: project1.hiking.html */
+
+/* NOTE: header */
+div#content {
+  position: absolute;
+}
+div#content > header > h1 {
+  text-align: center;
+}
+
+/* NOTE: hiking-main-content */
+div.hiking-main-content{
+  overflow: auto;
+  border: 2px dashed blue;
+  width: auto;
+}
+
+/* NOTE: hiking-content */
+figure {
+  width: auto;
+  border: 2px dashed red;
+  overflow: auto;
+}
+
+figure > img.hiking1, img.hiking3 {
+  width: 30%;
+  height: 30%;
+  border: 4px solid black;
+}
+
+figure > img.hiking1 {
+  float: left;
+}
+
+figure > img.hiking3 {
+  overflow: auto;
+  float: right;
+}
+
+figure > div.hiking-description {
+  overflow: auto;
+  border: 4px solid black;
+  width: 30%;
+  height: 30%;
+  float: left;
+  text-align: center;
+  margin: 0 2%;
+  padding: 2.5% 2%;
+  font-size: 150%;
+}
+
+/* figure > div > div.dodgedblue-border {
+  border: 10px solid dodgedblue;
+} */
+
+div > section {
+  overflow: auto;
+  float: left;
+  font-size: 150%;
+}
+
+/* NOTE: end of code */
