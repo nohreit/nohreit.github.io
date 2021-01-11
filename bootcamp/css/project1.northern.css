@@ -43,9 +43,10 @@ figure > div.northern-description {
   height: 30%;
   float: left;
   text-align: left;
-  margin: 0 2%;
+  margin: 4px 2%;
   padding: 81px 2%;
   font-size: 150%;
+  box-shadow: -1px -4px 0 4px dodgerblue, 1px 4px 0 4px dodgerblue;
 }
 
 /* figure > div > div.dodgedblue-border {
