@@ -11,14 +11,14 @@ div#content > header > h1 {
 /* NOTE: hiking-main-content */
 div.hiking-main-content{
   overflow: auto;
-  border: 2px dashed blue;
+  /* border: 2px dashed blue; */
   width: auto;
 }
 
 /* NOTE: hiking-content */
 figure {
   width: auto;
-  border: 2px dashed red;
+  /* border: 2px dashed red; */
   overflow: auto;
 }
 
