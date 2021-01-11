@@ -3,7 +3,7 @@
 /* NOTE: div#content */
 div#content {
   position: absolute;
-  border: 2px dashed gray;
+  /* border: 2px dashed gray; */
   width: 99%;
   overflow: auto;
   font-size: 120%;
@@ -17,12 +17,9 @@ div#content h3 {
   font-size: 200%;
 }
 
-
-
 /* NOTE: header */
 header {
-
-  border: 2px dashed black;
+  /* border: 2px dashed black; */
   width: auto;
   overflow: auto;
 }
@@ -41,7 +38,7 @@ header > img.header-iceland {
 
 div.iceland-main-content {
   width: auto;
-  border: 2px dashed aquamarine;
+  /* border: 2px dashed aquamarine; */
   overflow: auto;
 }
 
@@ -54,6 +51,7 @@ section.title-and-intro > h1 {
 /* NOTE: sub main-content things-to-do block */
 
 div.things-to-do {
+  background-color: darkturquoise;
   width: auto;
   border: 2px solid black;
   overflow: auto;
@@ -62,26 +60,30 @@ div.things-to-do {
 /* NOTE: .top-row and .bottom-row */
 div.top-row, div.bottom-row {
   width: auto;
-  border: 2px dashed red;
+  /* border: 2px dashed red; */
   overflow: auto;
 }
 
 /* NOTE: .top-row >  figure */
 figure.northern-light-img {
-  border: 2px dashed gold;
   width: auto;
   float: left;
   overflow: auto;
 }
 
+figure.northern-light-img > figcaption, figure.hiking-img > figcaption {
+  font-style: italic;
+}
+
 /* NOTE: .top-row and .bottom-row > figure > img, div.*-description */
 figure.northern-light-img > img, figure.hiking-img > img{
+  border: 2px solid purple;
   width: 536px;
   height: 358px;
 }
 
 div.top-row > div.northern-light-description, div.hiking-description {
-  border: 2px dashed black;
+  /* border: 2px dashed black; */
   overflow: auto;
   margin-right: 2%;
   margin-left: 2%;
@@ -90,7 +92,7 @@ div.top-row > div.northern-light-description, div.hiking-description {
 
 /* NOTE: .bottom-row > figure */
 figure.hiking-img {
-  border: 2px dashed gold;
+  /* border: 2px dashed gold; */
   width: auto;
   float: right;
   overflow: auto;
@@ -120,20 +122,20 @@ div.trip-cost table th {
 
 /* NOTE: contact-us block */
 div.contact-us {
-  border: 2px dashed black;
+  /* border: 2px dashed black; */
 }
 
 div.contact-us > div.contact-us-group-icons {
-  border: 2px dashed purple;
+  /* border: 2px dashed purple; */
 }
 
 figure.phone, figure.email, figure.instagram {
   overflow: auto;
-  border: 2px dashed blue;
+  /* border: 2px dashed blue; */
 }
 
 figure > img.img-phone, img.img-email, img.img-instagram {
-  border: 2px dashed gold;
+  /* border: 2px dashed gold; */
   width: 5%;
   float: left;
   overflow: auto;
@@ -141,7 +143,7 @@ figure > img.img-phone, img.img-email, img.img-instagram {
 }
 
 figure > figcaption.link-phone, figcaption.link-email, figcaption.link-instagram {
-  border: 2px dashed black;
+  /* border: 2px dashed black; */
   overflow: auto;
   margin-top: 2%;
   margin-left: 3%;
@@ -152,7 +154,7 @@ figure > figcaption.link-phone, figcaption.link-email, figcaption.link-instagram
 /* NOTE: footer block */
 footer {
 
-  border: 2px dashed pink;
+  /* border: 2px dashed pink; */
   text-align: center;
 }
 
