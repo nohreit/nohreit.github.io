@@ -22,6 +22,7 @@ div.clock-animation img.minute {
   animation-name: minute-rotate;
   animation-duration: 10s;
   animation-timing-function: linear;
+  animation-delay: 3s; /* delay to let viewer be ready. */
 }
 
 div.clock-animation img.hour {
@@ -37,6 +38,7 @@ div.clock-animation img.hour {
   animation-duration: 10s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
+  animation-delay: 3s; /* delay to let viewer be ready. */
 }
 
 @keyframes minute-rotate {
