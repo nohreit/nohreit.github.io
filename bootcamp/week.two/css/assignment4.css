@@ -2,7 +2,7 @@
 
 div.clock-animation {
   position: relative;
-  border: 2px dashed gray;
+  /* border: 2px dashed gray; */
   width: 512px;
   height: 512px;
   background-image: url("../pic/clockimage.png");
@@ -12,7 +12,7 @@ div.clock-animation {
 
 div.clock-animation img.minute {
   position: absolute;
-  border: 2px dashed purple;
+  /* border: 2px dashed purple; */
   width: 200px;
   height: 64px;
   top: 43.3%;
@@ -20,13 +20,13 @@ div.clock-animation img.minute {
   transform: rotate(-90deg);
   transform-origin: 2% center;
   animation-name: minute-rotate;
-  animation-duration: 12s;
+  animation-duration: 10s;
   animation-timing-function: linear;
 }
 
 div.clock-animation img.hour {
   position: absolute;
-  border: 2px dashed purple;
+  /* border: 2px dashed purple; */
   width: 128px;
   height: 64px;
   top: 43.3%;
@@ -34,7 +34,7 @@ div.clock-animation img.hour {
   /* transform: rotate(-90deg); */
   transform-origin: 2% center;
   animation-name: hour-rotate;
-  animation-duration: 12s;
+  animation-duration: 10s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
