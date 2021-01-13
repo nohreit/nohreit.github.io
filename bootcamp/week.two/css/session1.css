@@ -1,6 +1,73 @@
-.mountain {
+div.clock {
+  position: relative;
+  width: auto%;
+  background: url("../pic/clockimage.png") no-repeat;
+  background-size: 30%;
+}
+
+div.hour > img {
+  position: absolute;
+  width: 20%;
+  left: 30%;
+  top: 30%;
+}
+
+div.minute > img{
+  position: absolute;
+  width: 30;
+}
+
+
+
+
+
+
+
+
+
+/* div.mountain {
   width: 100%;
   height: 400px;
-  background-image: url("./pic/apple.jpg");
+  background-image: url("../pic/mountain.jpg");
   background-repeat: no-repeat;
+  position: relative;
+} */
+
+/* div.mountain > img {
+  position: absolute;
+  animation-name: move-to-right;
+  animation-duration: 10s;
+  animation-delay: 3s;
+  margin-top: 30%;
+  width: 10%;
 }
+
+@keyframes bicycle-move-to-right {
+  0% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: 65%;
+  }
+}
+
+@keyframes bicycle-move-to-right {
+  0% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: 65%;
+  }
+}
+
+@keyframes bicycle-move-to-right {
+  0% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: 65%;
+  }
+} */
