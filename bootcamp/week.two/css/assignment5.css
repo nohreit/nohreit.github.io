@@ -1,0 +1,140 @@
+/* NOTE: window */
+
+div.window{
+  /* border: dashed gray; */
+  width: auto;
+  height: auto;
+  font-family: arial, sans-serif;
+}
+
+/* NOTE: the following is for the buttons section */
+
+div.mainwindow, div.modalwindow {
+  /* border: dashed red; */
+  display: flex;
+  justify-content: center;
+}
+
+figure {
+  border: solid darkcyan;
+}
+
+figure > a {
+  text-decoration: none;
+  background-color: lightblue;
+  border-radius: 80px;
+  padding: 2% 0%;
+  color: black;
+  margin: 2% 20%;
+}
+
+figure img {
+  width: 50%;
+  height: 70%;
+  margin: 5% auto;
+}
+
+figure.first-product {
+  float: left;
+}
+
+figure.second-product {
+  float: right;
+}
+
+figure img, figure a {
+  display: flex;
+  justify-content: center;
+}
+
+figcaption {
+  text-align: center;
+}
+
+/* NOTE: the following is for the modalwindow section */
+
+div.modalwindow{
+  /* border: dashed orange; */
+  background-color: rosybrown;
+  width: 100%;
+  height: 100%;
+}
+
+div.left-modalwindow, div.right-modalwindow {
+  position: fixed;
+  pointer-events: none;
+  width: 70%;
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+div.left-modalwindow {
+  opacity: 0;
+}
+
+div.left-modalwindow:target {
+  opacity: 1;
+  pointer-events: all;
+}
+
+div.right-modalwindow {
+  opacity: 0;
+}
+
+div.right-modalwindow:target {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* NOTE: the following is for the msgblock section */
+div.left-msgblock {
+  background-color: lightskyblue;
+}
+
+div.right-msgblock {
+  background-color: lightgreen;
+}
+
+div.left-msgblock > h1, div.left-msgblock > p {
+  padding: 2%;
+  margin-top: 0%;
+  background-color: lemonchiffon;
+}
+
+div.right-msgblock > h1, div.right-msgblock > p {
+  padding: 2%;
+  margin-top: 0%;
+  background-color: tan;
+}
+
+div.msgblock> p {
+  margin: 3%;
+}
+
+div.msgblock img {
+  margin: 2% auto 10% 10%;
+  width:30%;
+  height: 30%:
+}
+
+div.left-msgblock > a {
+  text-decoration: none;
+  background-color: snow;
+  border-radius: 100px;
+  padding: 2% 1%;
+  color: black;
+  margin: 15% 10% 2% 20%;
+  float: right;
+}
+
+div.right-msgblock > a {
+  text-decoration: none;
+  background-color: midnightblue;
+  margin-top: 0%;
+  padding: 0% 1%;
+  color: white;
+  float: right;
+  text-align: center;
+
+}

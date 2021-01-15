@@ -20,7 +20,7 @@ div.clock-animation img.minute {
   transform: rotate(-90deg);
   transform-origin: 2% center;
   animation-name: minute-rotate;
-  animation-duration: 10s;
+  animation-duration: 60s;
   animation-timing-function: linear;
   animation-delay: 3s; /* delay to let viewer be ready. */
 }
@@ -35,7 +35,7 @@ div.clock-animation img.hour {
   /* transform: rotate(-90deg); */
   transform-origin: 2% center;
   animation-name: hour-rotate;
-  animation-duration: 10s;
+  animation-duration: 60s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   animation-delay: 3s; /* delay to let viewer be ready. */
