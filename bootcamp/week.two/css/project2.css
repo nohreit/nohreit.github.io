@@ -1,0 +1,374 @@
+body {
+  background-color: lightyellow;
+  /* border: dashed gray; */
+}
+
+header {
+  /* border: solid pink; */
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+header > img {
+  width: 10%;
+  height: 100%;
+  border: #B3B375 solid;
+  border-radius: 20%;
+  float: left;
+  margin: auto 1% ;
+  animation: logo 10s infinite;
+}
+
+div.logo-text {
+  width: auto;
+  height: auto;
+}
+
+.logo-text > h1 {
+  color: #B3B375;
+  /* border: solid red; */
+  font-size: 300%;
+  animation: h1 5s infinite alternate;
+}
+
+.logo-text > p {
+  /* border: solid lightblue; */
+  font-size: 120%;
+  font-style: italic;
+  font-weight: bold;
+  animation: p 5s infinite alternate;
+  margin-top: -5%;
+}
+
+
+/* NOTE: intro */
+
+div.intro {
+  /* border: solid red; */
+  display: flex;
+  justify-content: center;
+}
+
+.intro.image1 > img {
+  width: 100%;
+  float:left;
+}
+
+.intro.image1 > p {
+  position: absolute;
+  border: 4px solid white;
+  background-color: lightgray;
+  width: 30%;
+  height: 100px;
+  padding: 2%;
+  margin-left: -50%;
+  margin-top: 30%;
+  overflow: auto;
+}
+
+/* div.intro.image2 {
+  width: auto;
+  border: solid
+
+} */
+
+.intro.image2 > .left {
+  background-size: 100% 100%;
+  position: relative;
+  width: 50%;
+  margin: 2% auto 2% 2%;
+  background-image: linear-gradient(to right, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+   url("../pic/project2/intro_img1.jpg");
+}
+
+/* .intro.image2 > .left > img {
+  border: solid hotpink;
+  position: relative;
+  width: 100%;
+  float: left;
+} */
+
+.intro.image2 > .left > p.pl {
+  border: solid greenyellow;
+  position: absolute;
+  color: white;
+  width: 40%;
+  margin: 10% 15% 10% 10%;
+  padding: 5%;
+  overflow: auto;
+  height: 20%;
+}
+
+.intro.image2 > section {
+  border: solid gray;
+  width: 50%;
+  margin: 2% 2% 2% 10%;
+  padding: 2%;
+  background-color: #8A867B;
+    background-image: linear-gradient(to right, rgba(215, 176, 252, 0.5), rgba(255, 254, 224, 1));
+}
+
+/* NOTE: slideshow */
+
+div.slideshow {
+  /* border: 2px solid black; */
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  /* margin: 1%; */
+}
+
+div.box {
+  width: 300%;
+  height: 100%;
+  animation: slideshow 21s infinite alternate;
+  animation-delay: 4;
+}
+
+div.slide {
+  width: 33.33%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  font-size: 100%;
+}
+
+.slide > p > b {
+  font-size: 200%;
+}
+
+/* NOTE: animation */
+
+/* NOTE: logo */
+
+@keyframes logo {
+  0% {
+    opacity: 0;
+    transform: translateX(-200%) scale(1, 1) rotate(-360deg);
+  }
+  50%{
+    opacity: 1;
+    transform: translateX(0%) scale(1, 1) rotate(0deg);
+  }
+  100%{
+    opacity: 0;
+    transform: translateX(200%) scale(1, 1) rotate(360deg);
+  }
+}
+
+@keyframes h1 {
+  from {
+    opacity: 0;
+    transform: translateY(100%) scale(0,0);
+  }
+}
+
+@keyframes p {
+  from {
+    opacity: 0;
+    transform: translateY(100%) scale(2,2);
+  }
+}
+
+/* NOTE: slideshow */
+
+@keyframes slideshow {
+
+  0% {
+    margin-left: 0%;
+  }
+
+  50% {
+    margin-left: -100%;
+  }
+
+  100% {
+    margin-left: -200%;
+  }
+
+}
+
+div.slide:nth-child(1) {
+  background-color: #FFE875;
+}
+
+div.slide:nth-child(2) {
+  background-color: #9E9049;
+}
+
+div.slide:nth-child(3) {
+  background-color: #302C16;
+  color: white;
+}
+
+div.image:nth-child(1), div.image:nth-child(2), div.image:nth-child(3){
+  width: 100%;
+  height: 512px;
+}
+
+/* NOTE: container */
+
+/* div.container{
+  border: dashed navy;
+} */
+
+div.row {
+  display: flex;
+  justify-content: center;
+}
+
+/* NOTE: mainwindow */
+
+div.mainwindow {
+  border: solid orange;
+  /* position: relative; */
+}
+
+div.title {
+  /* border: solid gray; */
+  width: auto;
+  height: 20%;
+}
+
+.title > h2 {
+  margin-left: 3%;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: black;
+  margin: 1% 2%;
+}
+
+/* NOTE: items */
+
+.items > figure > img, .items > a, .items > figure > figcaption, .items > p  {
+  display: flex;
+  justify-content: center;
+}
+
+.items > figure > figcaption, .items > p {
+  text-align: center;
+}
+
+.items {
+  /* border: dashed purple; */
+  width: 50%;
+}
+
+.items > figure > img {
+  width: 80%;
+  height: 20%;
+  margin: 5% auto;
+}
+
+/* NOTE: Button */
+
+.items > a {
+  color: white;
+  background-color: black;
+  /* border: solid black; */
+  padding: 3%;
+  width: 40%;
+  text-align: center;
+  margin: 0% auto 5% auto;
+}
+
+.items > a:hover {
+  background-color: gray;
+}
+
+/* NOTE: modalwindow */
+
+/* div.modalwindow {
+  border: solid deepskyblue;
+} */
+
+.mw-items {
+  border: solid lightblue;
+  position: fixed;
+  pointer-events: none;
+  width: 70%;
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+  opacity: 1;
+  background-color: rgb(255, 240, 240);
+}
+
+/* .mw-items:target, .modalwindow {
+  opacity: 1;
+  pointer-events: all;
+} */
+
+/* NOTE: msgblock */
+
+.mw-items > a {
+  text-decoration: none;
+  background-color: gray;
+  margin-top: 0%;
+  margin-left: 10%;
+  padding: 1% 2%;
+  color: #00;
+  float: right;
+  width: 2%;
+  height: 3%;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+/* NOTE: footer */
+
+footer {
+  background-color: #050102;
+  color: #fff;
+  /* border: solid red; */
+  font-family: sans-serif;
+  margin-top: 10%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer > div {
+  /* border: solid white; */
+  text-align: center;
+  width: 20%;
+  margin: 2% 0%;
+}
+
+.footer li {
+  list-style-type: none;
+  text-align: center;
+}
+
+.footer a {
+  color: #fff;
+}
+
+footer hr {
+  background-color: #fff;
+}
+.contact-us {
+  /* border: dashed palegreen; */
+  margin-left: 70%;
+  margin-bottom: 15%;
+}
+
+.contact-us figure img {
+  width: 17%;
+}
+
+.copyrights {
+  text-align: center;
+}

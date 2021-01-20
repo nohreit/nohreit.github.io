@@ -1,4 +1,4 @@
-nav{
+/*nav{
   background-color: black;
   float: left;
   font: bold 12px Arial, Helvetica, Sans-serif;
@@ -12,7 +12,7 @@ nav{
   min-width: 650px;
   text-align: center
 }
-
+*/
 li{
   align-items: center;
   background-color: inherit; /* Green */
@@ -25,10 +25,13 @@ li{
   list-style-type:none;
 }
 
-li:hover {
-  background-color: #4CAF50;
+a:hover {
+  background-color: black;
+  color: white;
 }
 
 a {
   text-decoration: none;
 }
+
+

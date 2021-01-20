@@ -1,50 +1,48 @@
 /* NOTE: window */
 
 div.window{
-  /* border: dashed gray; */
+  border: solid gray;
   width: auto;
   height: auto;
   font-family: arial, sans-serif;
 }
 
-/* NOTE: the following is for the buttons section */
-
 div.mainwindow, div.modalwindow {
-  /* border: dashed red; */
+  border: solid springgreen;
   display: flex;
   justify-content: center;
 }
 
-figure {
-  border: solid darkcyan;
+div.items {
+  border: solid purple;
+  width: 50%;
 }
 
-figure > a {
+div.mainwindow {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+div.items > a {
   text-decoration: none;
-  background-color: lightblue;
-  border-radius: 80px;
+  background-color: navy;
+  border-radius: 2px;
   padding: 2% 0%;
-  color: black;
+  color: white;
   margin: 2% 20%;
+  display: flex;
+  justify-content: center;
+}
+
+div.items > figure > img, div.items > a {
+  display: flex;
+  justify-content: center;
 }
 
 figure img {
-  width: 50%;
-  height: 70%;
+  width: 90%;
+  height: 20%;
   margin: 5% auto;
-}
-
-figure.first-product {
-  float: left;
-}
-
-figure.second-product {
-  float: right;
-}
-
-figure img, figure a {
-  display: flex;
-  justify-content: center;
 }
 
 figcaption {
@@ -60,7 +58,7 @@ div.modalwindow{
   height: 100%;
 }
 
-div.left-modalwindow, div.right-modalwindow {
+div.item1-modalwindow, div.right-modalwindow {
   position: fixed;
   pointer-events: none;
   width: 70%;
@@ -69,44 +67,44 @@ div.left-modalwindow, div.right-modalwindow {
   justify-content: center;
 }
 
-div.left-modalwindow {
+div.item1-modalwindow {
   opacity: 0;
 }
 
-div.left-modalwindow:target {
+div.item1-modalwindow:target {
   opacity: 1;
   pointer-events: all;
 }
 
-div.right-modalwindow {
+/* div.right-modalwindow {
   opacity: 0;
 }
 
 div.right-modalwindow:target {
   opacity: 1;
   pointer-events: all;
-}
+} */
 
 /* NOTE: the following is for the msgblock section */
-div.left-msgblock {
+div.item1-msgblock {
   background-color: lightskyblue;
 }
 
-div.right-msgblock {
+/* div.right-msgblock {
   background-color: lightgreen;
-}
+} */
 
-div.left-msgblock > h1, div.left-msgblock > p {
+div.item1-msgblock > h1, div.item1-msgblock > p {
   padding: 2%;
   margin-top: 0%;
   background-color: lemonchiffon;
 }
 
-div.right-msgblock > h1, div.right-msgblock > p {
+/* div.right-msgblock > h1, div.right-msgblock > p {
   padding: 2%;
   margin-top: 0%;
   background-color: tan;
-}
+} */
 
 div.msgblock> p {
   margin: 3%;
@@ -118,7 +116,7 @@ div.msgblock img {
   height: 30%:
 }
 
-div.left-msgblock > a {
+div.item1-msgblock > a {
   text-decoration: none;
   background-color: snow;
   border-radius: 100px;
@@ -128,7 +126,7 @@ div.left-msgblock > a {
   float: right;
 }
 
-div.right-msgblock > a {
+/* div.right-msgblock > a {
   text-decoration: none;
   background-color: midnightblue;
   margin-top: 0%;
@@ -136,5 +134,4 @@ div.right-msgblock > a {
   color: white;
   float: right;
   text-align: center;
-
-}
+} */

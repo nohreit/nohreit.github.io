@@ -9,7 +9,7 @@ div.container {
 div.slideshow, div.window {
   border: 2px solid black;
   width: auto;
-  height: auto%;
+  height: auto;
   overflow: hidden;
   margin: 1%;
 }
@@ -25,11 +25,7 @@ div.slide {
   height: 100%;
   float: left;
   text-align: center;
-  font-size: 300%;
-}
-
-div.slide {
-  width: 30
+  font-size: 400%;
 }
 
 @keyframes slideshow {
