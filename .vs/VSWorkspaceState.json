@@ -2,8 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\bootcamp",
-    "\\bootcamp\\week.two"
+    "\\bootcamp\\week.three",
+    "\\bootcamp\\week.three\\css",
+    "\\bootcamp\\week.three\\js",
+    "\\bootcamp\\week.two\\css",
+    "\\css"
   ],
-  "SelectedNode": "\\bootcamp\\week.two\\project2.html",
+  "SelectedNode": "\\bootcamp\\week.three\\session2.html",
   "PreviewInSolutionExplorer": false
 }

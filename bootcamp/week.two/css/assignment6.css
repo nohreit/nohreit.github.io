@@ -1,0 +1,21 @@
+div.heading.row {
+    background-color: #d7d6d6;
+}
+
+div.heading > img {
+}
+
+a.btn-header {
+    width: 13%;
+    margin-left: 87%;
+}
+
+div.col > figure > img {
+    width: 25%;
+}
+
+div.col > figure > figcaption {
+    font-size: 150%;
+}
+
+

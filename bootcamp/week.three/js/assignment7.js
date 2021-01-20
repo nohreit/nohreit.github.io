@@ -17,9 +17,9 @@ Lucas and John are friends, Lucas is ? m tall and John is ? m tall.
 So John has higher BMI than Lucas, that is?.
 
 Test data:
-§ Data 1: Lucas weights 78 kg and is 1.69 m tall.John weights 92 kg and is 1.95
+ï¿½ Data 1: Lucas weights 78 kg and is 1.69 m tall.John weights 92 kg and is 1.95
 m tall.
-§ Data 2: Lucas weights 95 kg and is 1.88 m tall.John weights 85 kg and is 1.76
+ï¿½ Data 2: Lucas weights 95 kg and is 1.88 m tall.John weights 85 kg and is 1.76
 m tall.*/
 
 
@@ -29,7 +29,7 @@ const lucasBMI_1 = lucasMass / lucasHeight ** 2, lucasBMI_2 = lucasMass / (lucas
 
 const johnBMI_1 = johnMass / johnHeight ** 2, johnBMI_2 = johnMass / (johnHeight * johnHeight);
 
-const lucasHigherBMI = lucasBMI_1 > johnBMI_1 === lucasBMI_2 > johnBMI_2;
+const lucasHigherBMI = lucasBMI_1 > johnBMI_1;
 
 console.log(`Lucas and John are friends, Lucas is ${lucasHeight}m tall and John is ${johnHeight}m tall.
 So John has higher BMI than Lucas, that is ${lucasHigherBMI}.`)
