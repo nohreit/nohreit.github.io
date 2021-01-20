@@ -31,10 +31,10 @@ const johnBMI_1 = johnMass / johnHeight ** 2, johnBMI_2 = johnMass / (johnHeight
 
 const lucasHigherBMI = lucasBMI_1 > johnBMI_1 === lucasBMI_2 > johnBMI_2;
 
-console.log(`Lucas and John are friends, Lucas is ${lucasHeight} m tall and John is ${johnHeight} m tall.
+console.log(`Lucas and John are friends, Lucas is ${lucasHeight}m tall and John is ${johnHeight}m tall.
 So John has higher BMI than Lucas, that is ${lucasHigherBMI}.`)
 
-alert(`Lucas and John are friends, Lucas is ${lucasHeight} m tall and John is ${johnHeight} m tall.
+alert(`Lucas and John are friends, Lucas is ${lucasHeight}m tall and John is ${johnHeight}m tall.
 So John has higher BMI than Lucas, that is ${lucasHigherBMI}.`);
 
 
