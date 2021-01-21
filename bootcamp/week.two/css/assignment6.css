@@ -2,9 +2,6 @@ div.heading.row {
     background-color: #d7d6d6;
 }
 
-div.heading > img {
-}
-
 a.btn-header {
     width: 13%;
     margin-left: 87%;
@@ -16,6 +13,16 @@ div.col > figure > img {
 
 div.col > figure > figcaption {
     font-size: 150%;
+}
+
+div.grid > div.row > div.col > img {
+    height: 50%;
+}
+
+div.col > figure > img:nth-child(1) {
+    border-radius: 20%;
+    width: 100%;
+    height: 256px;
 }
 
 

@@ -19,13 +19,13 @@
 
 // console.log(str);
 
-const lucasMass = 10, lucasHeight = 1.69, johnMass = 95, johnHeight = 1.88;
+// const lucasMass = 10, lucasHeight = 1.69, johnMass = 95, johnHeight = 1.88;
 
-const lucasBMI_1 = lucasMass / lucasHeight ** 2, lucasBMI_2 = lucasMass / (lucasHeight * lucasHeight);
+// const lucasBMI_1 = lucasMass / lucasHeight ** 2, lucasBMI_2 = lucasMass / (lucasHeight * lucasHeight);
 
-const johnBMI_1 = johnMass / johnHeight ** 2, johnBMI_2 = johnMass / (johnHeight * johnHeight);
+// const johnBMI_1 = johnMass / johnHeight ** 2, johnBMI_2 = johnMass / (johnHeight * johnHeight);
 
-const lucasHigherBMI = lucasBMI_1 > johnBMI_1;
+// const lucasHigherBMI = lucasBMI_1 > johnBMI_1 = ;
 
 // console.log(`Lucas and John are friends, Lucas is ${lucasHeight}m tall and John is ${johnHeight}m tall.
 // So John has higher BMI than Lucas, that is ${lucasHigherBMI}.`)
@@ -33,12 +33,24 @@ const lucasHigherBMI = lucasBMI_1 > johnBMI_1;
 // alert(`Lucas and John are friends, Lucas is ${lucasHeight}m tall and John is ${johnHeight}m tall.
 // So John has higher BMI than Lucas, that is ${lucasHigherBMI}.`);
 
-console.log(`Lucas and John are friends, Lucas's BMI is ${lucasBMI_1} and John's BMI is ${johnBMI_1}.`);
+// console.log(`Lucas and John are friends, Lucas's BMI is ${lucasBMI_1} and John's BMI is ${johnBMI_1}.`);
 
-if(lucasHigherBMI){
-    console.log(`So John has higher BMI than Lucas.`);
+// if(lucasHigherBMI){
+//     console.log(`So John has higher BMI than Lucas.`);
     
+// }else{
+//     console.log(`So Lucas has higher BMI than John.`);
+// }
+
+
+const driverLicense = true;
+const goodVision = false;
+const isNotTired = true;
+
+if(driverLicense && !goodVision && isNotTired){
+    console.log("You can drive.");
 }else{
-    console.log(`So Lucas has higher BMI than John.`);
+    console.log("You cannot drive.");
 }
+
 
