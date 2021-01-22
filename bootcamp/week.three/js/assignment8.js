@@ -1,6 +1,6 @@
 /***********Assignment 8***********/
 
-/***A***/
+console.log("A.");
 
 // Uncomment one of each teams score array to get the winner.
 
@@ -41,6 +41,41 @@ if (netsAvg >= 100 || knicksAvg >= 100) {
     console.log("There is no winner");
 
 
-/***B***/
+console.log("B.");
+
+let tip = 0;
+
+let bill = [275, 28, 430];
+
+for (i = 0; i < bill.length; i++) {
+    switch (bill[i] >= 30 && bill[i] <= 300) {
+        case true:
+            tip = bill[i] * 0.15;
+            break;
+        default:
+            tip = bill[i] * 0.20;
+            break;
+    }
+
+    console.log(`The bill was ${bill[i]}, the tip was ${tip}, and the total value ${bill[i] + tip}.`);
+}
+
+
+console.log("C.");
+
+let celcius = 10, fahrenheit = 40;
+
+function celciusToFahrenheit(celcius) {
+    return celcius * 1.8 + 32;
+}
+
+function fahrenheitToCelcius(fahrenheit) { 
+    return (fahrenheit - 32) * 5/9;
+}
+
+console.log(`${celcius}\u00B0C is ${celciusToFahrenheit(celcius)}\u00B0F.`);
+
+console.log(`${fahrenheit}\u00B0CFis ${fahrenheitToCelcius(fahrenheit)}\u00B0C.`);
+
 
 
