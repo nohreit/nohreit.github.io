@@ -52,7 +52,7 @@ for (i = 0; i < bill.length; i++) {
         case true:
             tip = bill[i] * 0.15;
             break;
-        default:
+        case false:
             tip = bill[i] * 0.20;
             break;
     }
