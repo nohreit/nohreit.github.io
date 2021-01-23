@@ -47,17 +47,22 @@ let tip = 0;
 
 let bill = [275, 28, 430];
 
-for (i = 0; i < bill.length; i++) {
-    switch (bill[i] >= 30 && bill[i] <= 300) {
-        case true:
-            tip = bill[i] * 0.15;
-            break;
-        case false:
-            tip = bill[i] * 0.20;
-            break;
-    }
+// for (i = 0; i < bill.length; i++) {
+//     switch (bill[i] >= 30 && bill[i] <= 300) {
+//         case true:
+//             tip = bill[i] * 0.15;
+//             break;
+//         case false:
+//             tip = bill[i] * 0.20;
+//             break;
+//     }
 
-    console.log(`The bill was ${bill[i]}, the tip was ${tip}, and the total value ${bill[i] + tip}.`);
+//     console.log(`The bill was ${bill[i]}, the tip was ${tip}, and the total value ${bill[i] + tip}.`);
+// }
+
+for (i = 0; i < bill.length; i++) {
+    tip = (bill[i] >= 30 && bill[i] <= 300) ? bill[i] * 0.15 : bill[i] * 0.20;
+    console.log((tip >= 0) ? `The bill was ${bill[i]}, the tip was ${tip}, and the total value ${bill[i] + tip}.` : "Invalid amount");
 }
 
 

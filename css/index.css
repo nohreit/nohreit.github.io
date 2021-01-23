@@ -18,3 +18,8 @@ li{
   display: inline-block;
   list-style-type:none;
 }
+
+nav > div > a.btn:hover {
+  background-color: gray;
+  color: black;
+}
