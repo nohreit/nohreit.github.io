@@ -1,0 +1,37 @@
+div.container {
+    /* position: relative; */
+    border: solid gray;
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+}
+
+div.content {
+    border: solid red;
+    margin: 10%;
+}
+
+div.modal-wrapper {
+    position: fixed;
+    /* transform: translateY(-15rem); */
+    border: solid cornflowerblue;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    opacity: .1;
+    justify-content: center;
+    background-color: gray;
+    background-size: cover;
+}
+
+div.modal {
+    position: fixed;
+    border: dashed plum;
+    opacity: 0;
+    pointer-events: none;
+}
+
+div.modal:target {
+    opacity: 1;
+    pointer-events: all;
+}

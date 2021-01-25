@@ -58,91 +58,128 @@
 
 
 
-class Students { // Normally I would have put this class in a separate and personal js file
-    constructor(firstName, lastName, birthYear, schoolName, major, year) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.birthYear = birthYear;
-        this.schoolName = schoolName;
-        this.major = major;
-        this.year = year;
-    }
+// class Students { // Normally I would have put this class in a separate and personal js file
+//     constructor(firstName, lastName, birthYear, schoolName, major, year) {
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//         this.birthYear = birthYear;
+//         this.schoolName = schoolName;
+//         this.major = major;
+//         this.year = year;
+//     }
 
-    getFirstName() {
-        return this.firstName;
-    }
+//     getFirstName() {
+//         return this.firstName;
+//     }
 
-    getLastName() {
-        return this.lastName;
-    }
+//     getLastName() {
+//         return this.lastName;
+//     }
 
-    setFirstName(firstName) {
-        this.firstName = firstName;
-    }
+//     setFirstName(firstName) {
+//         this.firstName = firstName;
+//     }
 
-    setLastName(lastName) {
-        this.lastName = lastName;
-    }
+//     setLastName(lastName) {
+//         this.lastName = lastName;
+//     }
 
-    details(){
-        return `Student Info:
-                First name  : ${this.firstName}
-                Last name   : ${this.lastName}
-                Birth Year  : ${this.birthYear}
-                School      : ${this.schoolName}
-                Major       : ${this.major}
-                Year        : ${this.year}`
-    }
-}
+//     details(){
+//         return `Student Info:
+//                 First name  : ${this.firstName}
+//                 Last name   : ${this.lastName}
+//                 Birth Year  : ${this.birthYear}
+//                 School      : ${this.schoolName}
+//                 Major       : ${this.major}
+//                 Year        : ${this.year}`
+//     }
+// }
 
-const Rimuru = {
-    firstName: "Rimuru",
-    lastName: "Tempest",
-    race: "Slime",
-    color: "Blue",
+// const Rimuru = {
+//     firstName: "Rimuru",
+//     lastName: "Tempest",
+//     race: "Slime",
+//     color: "Blue",
 
-    getRace: function () {
-        return this.race;
-    },
+//     getRace: function () {
+//         return this.race;
+//     },
 
-    getColor: function () {
-        return this.color;
-    },
+//     getColor: function () {
+//         return this.color;
+//     },
 
-    details: function () {
-        return `Entity Info:
-                First name  : ${this.firstName}
-                Last name   : ${this.lastName}
-                Race        : ${this.race}
-                Color       : ${this.color}`
-    }
-}
+//     details: function () {
+//         return `Entity Info:
+//                 First name  : ${this.firstName}
+//                 Last name   : ${this.lastName}
+//                 Race        : ${this.race}
+//                 Color       : ${this.color}`
+//     }
+// }
 
-Rimuru.setRace = function (race) {
-    this.race = race;
-}
+// Rimuru.setRace = function (race) {
+//     this.race = race;
+// }
 
-Rimuru.setColor = function (color) {
-    this.color = color;
-}
+// Rimuru.setColor = function (color) {
+//     this.color = color;
+// }
 
 
-function main() {
-    student = new Students("Sirius", "Taurus", 2000, "Magic Highschool", "Engeneering", "Freshman");
-    console.log(student.details());
+// function main() {
+//     student = new Students("Sirius", "Taurus", 2000, "Magic Highschool", "Engeneering", "Freshman");
+//     console.log(student.details());
 
-    student.setFirstName("Shiba");
-    student.setLastName("Tatsuya");
+//     student.setFirstName("Shiba");
+//     student.setLastName("Tatsuya");
 
-    console.log(student.details());
+//     console.log(student.details());
 
-    console.log(Rimuru.details());
+//     console.log(Rimuru.details());
 
-    Rimuru.setRace("Human");
-    Rimuru.setColor("Pale blue");
+//     Rimuru.setRace("Human");
+//     Rimuru.setColor("Pale blue");
 
-    console.log(Rimuru.details());
+//     console.log(Rimuru.details());
 
-}
+// }
 
-console.log(main());
+// console.log(main());
+
+// const lucas = {
+//     firstName: "Rimuru",
+//     lastName: "Tempest",
+//     race: "Slime",
+//     color: "Blue",
+
+//     getRace: function () {
+//         return this.race;
+//     },
+
+//     getColor: function () {
+//         return this.color;
+//     },
+
+//     details: function () {
+//         return `Entity Info:
+//                 First name  : ${this.firstName}
+//                 Last name   : ${this.lastName}
+//                 Race        : ${this.race}
+//                 Color       : ${this.color}`
+//     }
+// }
+
+// console.log(document.querySelector("p").textContent);
+
+// document.querySelector("p").textContent = "Used js to modify the previous text";
+
+// document.querySelector(".btn").addEventListener( "click", function () {
+//     const userInput = Number(document.querySelector(".userInput").value);
+//     document.querySelector(".output").textContent = `${document.querySelector(".output").textContent} ${userInput}`;
+// })
+
+console.log(Math.trunc(Math.random()*100));
+
+
+
