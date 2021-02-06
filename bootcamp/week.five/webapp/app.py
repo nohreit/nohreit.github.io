@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 
 app = Flask(__name__, template_folder="templates")
-app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:Urpassword@localhost/bmi"
+app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:postgresql@localhost/BMI"
 db = SQLAlchemy(app)
 
 
@@ -11,31 +11,38 @@ class Data(db.Model):
 
     __tablename__ = "data"
     id = db.Column(db.Integer, primary_key=True)
-    email_ = db.Column(db.String(120), unique = True)
-    height_ = db.Column(db.Integer)
-    weight_ = db.Column(db.Integer)
-    
-    def __init___(self, email_, height_, weight_):
-        self.email_-email
-        self.height_-height
-        self.weight_-weight
+    email = db.Column(db.String(120), unique=True)
+    height = db.Column(db.Integer)
+    weight = db.Column(db.Integer)
+
+    def __init__(self, email, height, weight):
+        self.email = email
+        self.height = height
+        self.weight = weight
 
 
-#home page rounte
+# home page rounte
 @app.route("/")
 def index():
     return render_template("index.html")
 
 
 # thankyou page route
-@app.route("/thankyou", methods = ["POST"])
+@app.route("/thankyou", methods=["POST"])
 def thankyou():
     if request.method == "POST":
-        email = request.from['email_name']
-        height = request.from['height_name']
-        weight = request.from['weight_name']
+        email = request.form['email_me']
+        height = request.form['height_value']
+        weight = request.form['weight_value']
 
-    print(request.form)
+        print(request.form)
+
+        data = Data(email, height, weight)
+        db.session.add(data)
+        db.session.commit()
+
+        return render_template("thankyou.html")
+
 
 #     return render_template("./thankyou.html", methods=['POST'])
 
