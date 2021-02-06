@@ -95,37 +95,38 @@
 //     }
 // }
 
-// const Rimuru = {
-//     firstName: "Rimuru",
-//     lastName: "Tempest",
-//     race: "Slime",
-//     color: "Blue",
+const Rimuru = {
+    firstName: "Rimuru",
+    lastName: "Tempest",
+    race: "Slime",
+    color: "Blue",
 
-//     getRace: function () {
-//         return this.race;
-//     },
+    getRace: function () {
+        return this.race;
+    },
 
-//     getColor: function () {
-//         return this.color;
-//     },
+    getColor: function () {
+        return this.color;
+    },
 
-//     details: function () {
-//         return `Entity Info:
-//                 First name  : ${this.firstName}
-//                 Last name   : ${this.lastName}
-//                 Race        : ${this.race}
-//                 Color       : ${this.color}`
-//     }
-// }
+    details: function () {
+        return `Entity Info:
+                First name  : ${this.firstName}
+                Last name   : ${this.lastName}
+                Race        : ${this.race}
+                Color       : ${this.color}`;
+    }
+}
 
-// Rimuru.setRace = function (race) {
-//     this.race = race;
-// }
+Rimuru.setRace = function (race) {
+    this.race = race;
+}
 
-// Rimuru.setColor = function (color) {
-//     this.color = color;
-// }
+Rimuru.setColor = function (color) {
+    this.color = color;
+}
 
+console.log(Rimuru.details());
 
 // function main() {
 //     student = new Students("Sirius", "Taurus", 2000, "Magic Highschool", "Engeneering", "Freshman");

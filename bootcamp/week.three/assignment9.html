@@ -2,35 +2,104 @@
 
 <head>
     <meta charset="utf8">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./css/assignment9.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <title>Thierno - Assignment 9</title>
 
 </head>
 
 <body>
 
-    <div class="container">
-        <p>Please check the browser console for javascript outputs</p>
+    <div class="container text-center mt-3">
+        <p>Please check the console for Part A and Part B</p>
+    </div>
 
-        <div class="content">
-            <button href="#" type>Button 1</button>
-            <button href="#" type>Button 2</button>
-            <button href="#" type>Button 3</button>
-        </div>
-
-        <div class="modal-wrapper">
-            <div class="modal">
-                <button class='modal-toggle modal-button' href="#">×</button>
-                <h2 class='modal-title'>Modal Title</h2>
-                <div class='modal-content'>
-                    <p class='p'>Your Modal Content.</p>
+    <div class="container d-flex justify-content-center mt-5 border">
+        <div class="overlay" id="modal1">
+            <div class="modalContent border border-light p-2">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="title float-start">Modal 1</h1>
+                    </div>
+                    <div class="col">
+                        <button id="close1" class="btnClose btn btn-danger float-end" title="Close">X</button>
+                    </div>
+                    <hr>
+                </div>
+                <div class="row">
+                    <h1 class="text-center">Lorem ipsum</h1>
+                </div>
+                <div class="row">
+                    <p class="fs-5">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias nulla consectetur eos
+                        impedit, asperiores, vitae omnis exercitationem dolore cupiditate architecto nemo autem quaerat
+                        sint. Quis quasi fugit ratione non error!
+                    </p>
                 </div>
             </div>
         </div>
 
-        <!-- script -->
-        <script src="./js/assignment9.js"></script>
+        <div class="overlay" id="modal2">
+            <div class="modalContent border border-light p-2">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="title float-start">Modal 2</h1>
+                    </div>
+                    <div class="col">
+                        <button id="close2" class="btnClose btn btn-danger float-end" title="Close">X</button>
+                    </div>
+                    <hr>
+                </div>
+                <div class="row">
+                    <h1 class="text-center">Lorem ipsum</h1>
+                </div>
+                <div class="row">
+                    <p class="fs-5">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias nulla consectetur eos
+                        impedit, asperiores, vitae omnis exercitationem dolore cupiditate architecto nemo autem quaerat
+                        sint. Quis quasi fugit ratione non error!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay" id="modal3">
+            <div class="modalContent border border-light p-2">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="title float-start">Modal 3</h1>
+                    </div>
+                    <div class="col">
+                        <button id="close3" class="btnClose btn btn-danger float-end" title="Close">X</button>
+                    </div>
+                    <hr>
+                </div>
+                <div class="row">
+                    <h1 class="text-center">Lorem ipsum</h1>
+                </div>
+                <div class="row">
+                    <p class="fs-5">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias nulla consectetur eos
+                        impedit, asperiores, vitae omnis exercitationem dolore cupiditate architecto nemo autem quaerat
+                        sint. Quis quasi fugit ratione non error!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div style="padding:20px">
+            <button id="btn1" class="btn btn-light border border-primary">Button 1</button>
+        </div>
+        <div style="padding:20px">
+            <button id="btn2" class="btn btn-light border border-primary">Button 2</button>
+        </div>
+        <div style="padding:20px">
+            <button id="btn3" class="btn btn-light border border-primary">Button 3</button>
+        </div>
+    </div>
+    <!-- script -->
+    <script src="./js/assignment9.js"></script>
 </body>
 
 </html>
