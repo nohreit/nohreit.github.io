@@ -1,37 +1,23 @@
-div.container {
-    /* position: relative; */
-    border: solid gray;
-    /* display: flex;
-    justify-content: center; */
-    text-align: center;
-}
-
-div.content {
-    border: solid red;
-    margin: 10%;
-}
-
-div.modal-wrapper {
+#overlay {
     position: fixed;
-    /* transform: translateY(-15rem); */
-    border: solid cornflowerblue;
-    display: flex;
+    display: none;
     width: 100%;
     height: 100%;
-    opacity: .1;
-    justify-content: center;
-    background-color: gray;
-    background-size: cover;
-}
-
-div.modal {
-    position: fixed;
-    border: dashed plum;
-    opacity: 0;
-    pointer-events: none;
-}
-
-div.modal:target {
-    opacity: 1;
-    pointer-events: all;
-}
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  #text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }

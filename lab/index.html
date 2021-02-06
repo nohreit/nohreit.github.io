@@ -2,8 +2,8 @@
 
 <head>
     <meta charset="utf8">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="./index.css">
     <title>Laboratory</title>
 
@@ -11,41 +11,32 @@
 
 <body>
 
-    <div class="container">
-        <p>Please check the browser console for javascript outputs</p>
+    <div class="container d-flex justify-content-center mt-5 border">
 
-        <div id="here" class="content">
-            <a href="#open1" type="button">Button 1</a>
-            <a href="#open2" type="button">Button 2</a>
-            <a href="#open3" type="button">Button 3</a>
+        <div class="overlay" id="modal1" onclick="off()">
+            <div id="text">Modal 1</div>
         </div>
 
-        <div class="modal-wrapper">
-            <div id="open1" class="modal">
-                <a class='modal-toggle modal-button' href="#here">×</a>
-                <h2 class='modal-title'>Modal 1</h2>
-                <div class='modal-content'>
-                    <p class='p'>Your Modal Content.</p>
-                </div>
-            </div>
-            <div id="open2" class="modal">
-                <a class='modal-toggle modal-button' href="#here">×</a>
-                <h2 class='modal-title'>Modal 2</h2>
-                <div class='modal-content'>
-                    <p class='p'>Your Modal Content.</p>
-                </div>
-            </div>
-            <div id="open3" class="modal">
-                <a class='modal-toggle modal-button' href="#here">×</a>
-                <h2 class='modal-title'>Modal 3</h2>
-                <div class='modal-content'>
-                    <p class='p'>Your Modal Content.</p>
-                </div>
-            </div>
+        <div class="overlay" id="modal2" onclick="off()">
+            <div id="text">Modal 2</div>
         </div>
 
-        <!-- script -->
-        <script src="./js/assignment9.js"></script>
+        <div class="overlay" id="modal3" onclick="off()">
+            <div id="text">Modal 3</div>
+        </div>
+
+        <div style="padding:20px">
+            <button class="btn btn-light border border-primary" onclick="on()">Button 1</button>
+        </div>
+        <div style="padding:20px">
+            <button class="btn btn-light border border-primary" onclick="on()">Button 2</button>
+        </div>
+        <div style="padding:20px">
+            <button class="btn btn-light border border-primary" onclick="on()">Button 3</button>
+        </div>
+    </div>
+    <!-- script -->
+    <script src="./index.js"></script>
 </body>
 
 </html>
