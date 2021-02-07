@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script src="app.js" type="text/javascript" charset="utf-8"></script>
+	<script src="skycons.js" type="text/javascript" charset="utf-8"></script>
+	<title>Weather</title>
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<button class="navbar-brand btn " disabled>Navbar</button>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+				aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+			  <ul class="navbar-nav">
+				<li class="nav-item active">
+				  <a class="nav-link" href="../../../index.html">Home</a>
+				</li>
+				<!-- <li class="nav-item">
+				  <a class="nav-link" href="#">Features</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#">Pricing</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link disabled" href="#">Disabled</a>
+				</li> -->
+			  </ul>
+			</div>
+		  </nav>
+	</header>
+
+	<div class="container justify-content-center">
+		<div class="location">
+			<h1 class="location-timezone">City, State</h1>
+			<canvas class="icon">Temperature</canvas>
+		</div>
+		<div class="temperature">
+			<h2 class="temperature-degree"></h2>
+			<div class="temperature-description"></div>
+		</div>
+
+		<div class="user-input-div">
+			<div class="input-item">
+				<input type="number" class="input-text" placeholder="ZIPCODE" title="Provide a zipcode to get the weather.">
+			</div>
+			<div class="input-item">
+				<button class="search-btn" title="Click to get the weather at the zipcode location"> Search Location </button>
+			</div>
+		</div>
+		<div class="error-message text-center"></div>
+
+	</div>
+	
+	<footer class=" border bg-dark mt-3">
+		<div class="contributors text-center pb-1">
+			<h1 class="pt-3">Contributors</h1>
+			<hr>
+			<li>Jianhui Chen </li>
+			<li>Mohammed Chowdhury</li>
+			<li>Patricio Tapia</li>
+			<li>Thierno Bah</li>
+		</div>
+	</footer>
+	<!-- scripts -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+		integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+		integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+		crossorigin="anonymous"></script>
+
+</body>
+
+</html>
