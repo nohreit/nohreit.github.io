@@ -52,7 +52,7 @@ body{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-top: 9vmin;
+	margin-top: 5vmin;
 }
 
 .input-text{
@@ -132,6 +132,6 @@ body{
 
 footer {
 	width: auto;
-	height: auto;
-	padding-bottom: 2%;
+	height: 100%;
+	padding-bottom: 2.2%;
 }
