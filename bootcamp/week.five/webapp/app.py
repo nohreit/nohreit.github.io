@@ -1,9 +1,15 @@
+import psycopg2
+
+
 from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 
 
+
 app = Flask(__name__, template_folder="templates")
 app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:postgresql@localhost/BMI"
+con = psycopg2.connect(database="BMI", user="postgres", password="postgresql", host="127.0.0.1", port="5432")
+cursor = con.cursor()
 db = SQLAlchemy(app)
 
 
@@ -24,7 +30,7 @@ class Data(db.Model):
 # home page rounte
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return render_template("./index.html")
 
 
 # thankyou page route
@@ -41,7 +47,17 @@ def thankyou():
         db.session.add(data)
         db.session.commit()
 
-        return render_template("thankyou.html")
+        return render_template("./thankyou.html")
+
+
+# retrieve data from database
+
+def fetchData():
+    cursor.execute("select * from data")
+    listData = cursor.fetchall()
+    
+    return render_template("./thankyou.html", data=listData)
+
 
 
 #     return render_template("./thankyou.html", methods=['POST'])
